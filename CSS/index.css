@@ -1,0 +1,692 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+  /* Css fo body section*/
+body {
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+  }
+
+    /* Css for website logo*/
+  .logo {
+    height: 80px;
+    width: 80px;
+    margin-left: 10px;
+  }
+
+  h1 {
+    font-family: 'Trirong', serif;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-weight: lighter; 
+    width: 46%;
+    margin-left: 30px;
+    font-size: 32px;
+    margin-top: 10px;
+    float: left;
+  }
+  
+  h2{
+    font-family: 'Trirong', serif;
+    font-weight: bolder;
+    font-size: 36px;
+    
+  }
+  h3{
+    font-size: 24px;
+    font-weight: lighter;
+    text-align: center; 
+  }
+  .Introduction{
+    text-align: center;
+    padding: 20px;
+  }
+  .Container{
+    display: flex;
+    font-size: 18px;
+    background: #80222D;
+    margin: 10px;
+    padding: 10px;
+
+  }
+  /* For header navigation*/
+  .navbar{
+    margin: auto;
+    padding: 0.5rem 1.5rem;
+  }
+  .nav-links{
+    display: flex;
+    gap: 2rem;
+  }
+  .nav-link, .Drop-down li{
+    list-style: none;
+    height: 100%;
+    padding: 0 0.5rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: white;
+  }
+    /*Css for dropdown menu*/
+  .Drop-down{
+    position: absolute;
+    padding: 0.5rem 0;
+    margin: 0.5rem -0.5rem;
+    background: #80222D;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 0.5rem;
+    font-size: 12px;
+    display: none;
+  }
+  .nav-link :hover{
+    background-color: black;
+    color: #ffffff;
+    border-radius: 0.5rem;
+  
+  }
+  .career:hover .Drop-down{
+    display: block;
+
+  }
+  .career a{
+    display: flex;
+    align-items: center;
+  }
+  .dropdown-icon{
+    font-size: 18px;
+    position:relative;
+    right: -5px;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+  }
+  .career:hover .dropdown-icon{
+    transform: rotate(180deg);
+  }
+  .Drop-down li:hover{
+    background-color: black;
+    color: #ffffff;
+    border-radius: 0.5rem;
+  }
+
+ 
+  .Menu{
+      width: 100%;
+      justify-content: space-around;
+      display: flex;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+    .Menu a{
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      font-weight: bold; 
+      border: 1px solid transparent;
+      transition: 0.5 ease;
+    }
+    .Menu a :hover{
+      background-color: #ffffff;
+      color: black;
+    }
+    nav a ul{
+      position: absolute;
+      display: block;
+      background-color: #80222D;
+      border-radius: 0px 0px 0px 5px 5px;
+
+    }
+      /* Css for career content*/
+
+    .CareerContent{
+      width: 50%;
+      float: left;
+      margin-right: 100px;
+      margin-left: 30px;
+      background-color: #80222D;
+      color: #ffffff;
+      padding: 30px;
+      margin-top: 90px;
+    }
+    .CareerContent p{
+      color: #ffffff;
+      font-size: 18px;
+    }
+    .profile{
+      width: 30%;
+    } 
+    section{
+      background-color: #cccccc;
+      margin-top: 50px;
+    }
+    footer {
+      background-color: #80222D;
+      color: white;
+      padding: 30px 0;
+    }
+    
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .contactinfo {
+      text-align: left;
+      flex: 1;
+      margin: 0 10px;
+    }
+    
+    .contactinfo h4 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .contactinfo ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .contactinfo ul li {
+      margin-bottom: 10px;
+    }
+    
+    .contactinfo ul a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    
+    .back-to-top {
+      text-align: center;
+      flex: 1;
+      order: 2;
+    }
+    
+    .back-to-top button {
+      font-size: 16px;
+      color: #80222D;
+      background-color: #ffffff;
+      border: none;
+      padding: 12px;
+      font-family: 'Trirong', serif;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    
+    .social-media {
+      text-align: right;
+      flex: 1;
+      order: 3; 
+    }
+    
+    .social-media h4 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      margin-right: 60px;
+    }
+    
+    .social-media-icons {
+      display: flex;
+      justify-content: flex-end; 
+    }
+    
+    .social-media a {
+      text-decoration: none;
+      padding: 10px;
+      background-color: #ffffff;
+      margin: 0 5px;
+      border-radius: 50%;
+    }
+    
+    .social-media a i {
+      font-size: 2em;
+      color: #80222D;
+      opacity: 0.9;
+    }
+    
+    .footer-copyright {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .footer-copyright p {
+      color: white;
+    }
+    
+    .designer {
+      opacity: 0.7;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 400;
+      margin: 0px 5px;
+    } 
+    /*contact form*/
+    .main-section{
+      background-color: #cccccc;
+    }
+    .main-section h2{
+      text-align: center;
+      font-family: 'Trirong', serif;
+      color: #333333;
+      font-size: 40px;
+    }
+    .contact-info {
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+      margin: 10px;
+      width: 45%; 
+      transition: transform 0.3s;
+      margin-left: 28%;
+    }
+    .contact-info h4 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #000000;
+    }
+    
+    .icon-email,
+    .icon-call {
+      background-color: #ffffff;
+      padding: 10px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .icon-email img,
+.icon-call img {
+  height: 70px;
+  width: 80px;
+  display: block;
+  margin: 0 auto;
+}
+
+.mail-address,
+.Phone-number {
+  margin-top: 20px;
+}
+
+.mail-address a,
+.Phone-number a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #80222D;
+}
+
+.contact-info:hover {
+  transform: scale(1.05);
+}
+
+/* Contact Form */
+.contactform {
+  text-align: center;
+  margin: 20px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #80222D;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.success-message {
+  text-align: center;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+}
+
+input:valid, textarea:valid {
+  border-color: #4CAF50;
+}
+
+input:invalid, textarea:invalid {
+  border-color: #F44336;
+}
+
+
+      /*Gallery Page*/
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin: 20px;
+    }
+    
+    .gallery-item {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      transition: transform 0.2s;
+    }
+    
+    .gallery-item img {
+      max-width: 100%;
+      display: block;
+    }
+    
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+    .headingpage{
+      text-align: center;
+
+    }
+    .awardpage{
+      text-align: center;
+    }
+    .testimonialpage{
+      text-align: center;
+      margin-top: 30px;
+
+    }
+    /*Award Page*/
+    .certifications {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+      margin: 40px;
+    }
+    
+    .certification-item {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .certification-item img {
+      max-width: 100%;
+    }
+    
+    .certification-item h3 {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+    
+    .certification-item p {
+      font-size: 16px;
+    }
+   
+   
+ /* CSS for the internship page*/
+
+.internship {
+  background-color: #f5f5f5;
+  padding: 40px;
+  text-align: center;
+}
+
+.internship .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.internship h2 {
+  font-family: 'Trirong', serif;
+  font-weight: bold;
+  font-size: 36px;
+  color: #333;
+}
+
+.internship p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+.internship ul {
+  list-style: none;
+  padding: 0;
+}
+
+.internship ul li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.internship i {
+  margin-right: 10px;
+  color: #80222D;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #80222D;
+  margin: 0 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
+}
+
+/* CSS for Skill Page*/
+.main-section {
+  background-color: #f5f5f5;
+  padding: 40px;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container h2 {
+  font-family: 'Trirong', serif;
+  font-weight: bold;
+  font-size: 36px;
+  color: #333;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.skill {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+  width: calc(50% - 20px); 
+}
+
+.skill i {
+  font-size: 36px;
+  color: #80222D;
+  margin-bottom: 10px;
+}
+
+.skill h3 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.skill p {
+  font-size: 16px;
+}
+/* testimonial*/
+.testimonial-section {
+  background-color: #fff;
+  padding: 40px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-text {
+  flex: 1;
+  text-align: left;
+}
+
+.testimonial-text p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.testimonial-author {
+  flex: 1;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.testimonial-author img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-author p {
+  font-size: 16px;
+  color: #80222D;
+}
+
+
+
+
+
+
+/*Css for the responsivedesign section*/
+    @media screen and (max-width: 768px) {
+      body {
+          font-size: 14px;  
+      }
+      .Menu {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+      }
+      .logo {
+          width: 90px; 
+      }
+      
+      .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .contact-info ul {
+        text-align: center;
+      }
+      
+      .socialMedia {
+        justify-content: center;
+        margin-top: 20px;
+      }
+      
+      .socialMedia a {
+        padding: 8px;
+      }
+      
+      .BackTop {
+        justify-content: center;
+      }
+      
+      .FooterCopyright {
+        font-size: 14px;
+      }
+      
+      Button {
+        display: block;
+        margin: 14px;
+      }
+      .CareerContent {
+        width: 100%;
+        margin: 20px 0;
+      }
+      
+      .profile {
+        width: 100%;
+      }
+      
+      section {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      h2 {
+        font-size: 28px;
+      }
+      
+      p {
+        font-size: 16px;
+      }
+      .contact-info {
+        width: 100%;
+      }
+      .contact-info h4 {
+        font-size: 20px;
+      }
+  }
+
+  
+
+
+
